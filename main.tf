@@ -1,9 +1,4 @@
 # Create a loadbalancer and n-number of virtual machines. Alo define ip and NIC.
-
-output "resource_group_name" {
-  value = azurerm_resource_group.name
-}
-
 resource "azurerm_public_ip" "lbIP" {
  name                         = "sysAdmPublicIPForLB"
  location                     = var.azure_location
